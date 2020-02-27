@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1937.001" height="572.745" viewBox="0 0 1937.001 572.745">
+  <defs>
+    <filter id="Intersection_7" x="0" y="0" width="1937.001" height="572.745" filterUnits="userSpaceOnUse">
+      <feOffset dy="5" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feFlood flood-opacity="0.161"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="Intersection_8" x="0" y="0" width="1937.001" height="497.498" filterUnits="userSpaceOnUse">
+      <feOffset dy="5" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="3" result="blur-2"/>
+      <feFlood flood-color="#4b4b4b" flood-opacity="0.678"/>
+      <feComposite operator="in" in2="blur-2"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="Group_102" data-name="Group 102" transform="translate(-5288.5 1606.5)">
+    <g transform="matrix(1, 0, 0, 1, 5288.5, -1606.5)" filter="url(#Intersection_7)">
+      <path id="Intersection_7-2" data-name="Intersection 7" d="M609.09,558.227c-163.636-95.7-209.091-67.784-227.273-63.8s-84.848,3.988-209.091,0c-27.21-.873-50.06-6.336-68.956-14.254A165.5,165.5,0,0,1,77.32,466.186V80.161h1919V491.929c-9.106,10.049-21.8,18.45-41.777,18.45-51.515,0-78.787-3.988-124.241-15.95s-57.576-23.924-124.242-35.886c-33.988-6.1-54.586,14.747-89.5,35.593-33.57,20.044-80.376,40.088-165.046,36.179-95.961-4.431-117.1-2.708-129.92-.985-10.259,1.378-15.2,2.756-48.866.985-75.757-3.988-136.364-3.988-251.515,0s-60.607,43.861-154.546,79.746c-38.724,14.794-61.485,24.844-86.327,24.844C744.92,634.906,705.271,614.474,609.09,558.227Z" transform="translate(-68.32 -76.16)" fill="#e5ff00"/>
+    </g>
+    <g transform="matrix(1, 0, 0, 1, 5288.5, -1606.5)" filter="url(#Intersection_8)">
+      <path id="Intersection_8-2" data-name="Intersection 8" d="M626.942,530.316C463.306,434.62,400,490.442,381.818,494.429s-84.848,3.988-209.091,0c-27.21-.873-55.76-27.967-74.657-35.886-7.556-3.166-14.455-6.461-20.75-9.819V123.161h1919V501.149c-6.623,5.265-15.739,8.835-28.815,8.835-51.515,0-70.5-3.593-115.956-15.555s-65.048-57.979-152.722-60.807c-42.946-1.386-55.984,26.964-78.41,55.314-23.358,29.526-56.9,59.054-145.018,54.986-172.727-7.975-126.915-9.619-202.673-13.606s-72.466-24.32-187.618-20.332-132.316,29.162-226.256,65.048c-41.465,15.84-59.622,27.629-81.047,27.627C750.693,602.657,718.348,583.771,626.942,530.316Z" transform="translate(-68.32 -119.16)" fill="#181818"/>
+    </g>
+  </g>
+</svg>

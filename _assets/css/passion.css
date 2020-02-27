@@ -1,0 +1,282 @@
+:root {
+    --yellow: #e5ff00;
+    --grey: #181818;
+    --grey2: #4a4a4a;
+    --grey3: #bebebe;
+    --dark: #000;
+    --white: #fff;
+    --text-grey: #bebebe;
+    --red: rgb(255, 0, 0);
+    --blue: #1affd8;
+    --purple: #ff1ae8;
+}
+
+/* CONTENT */
+
+/* SLIDE */
+.slide div.non {
+    opacity: 0 !important;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    visibility: hidden !important;
+    display: none !important;
+}
+
+.slide div.active-sec {
+    opacity: 1 !important;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+    visibility: visible !important;
+    display: block !important;
+}
+
+/* SEC 1 */
+.bg-1 {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: url("../img/bg.svg") no-repeat center;
+    background-size: cover;
+}
+
+.sec1 {
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
+}
+
+.sec1 .bg-2 {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: url("../img/hiasan+miring.svg") no-repeat center;
+    background-size: cover;
+    background-position-y: 50px;
+}
+
+.sec1 .box-fixed {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+}
+
+.sec1 .box-fixed .title {
+    width: 40%;
+    margin-left: 140px;
+    box-sizing: border-box;
+}
+
+.sec1 .box-fixed .title img {
+    width: 100%;
+}
+
+.sec1 .center {
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    padding: 0 50px;
+    margin-top: -17%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.sec1 .center span {
+    font-size: 6em;
+    font-weight: bold;
+    cursor: pointer;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+}
+
+.sec1 .center span:hover {
+    color: var(--grey2);
+}
+
+.sec1 .center .img-box {
+    width: 33%;
+    margin-top: 20%;
+}
+
+.sec1 .center .img-box img {
+    width: 100%;
+}
+
+.sec1 .content {
+    width: 30%;
+    height: auto;
+    background: var(--white);
+    padding: 20px 5px 20px 60px;
+    -webkit-clip-path: polygon(0 0, 100% 0%, 75% 100%, 0% 100%);
+    clip-path: polygon(0 0, 100% 0%, 75% 100%, 0% 100%);
+    font-weight: bold;
+    margin-top: -40vh;
+}
+
+.sec1 .content .box {
+    width: 75%;
+}
+
+.sec1 .content .box h1 span {
+    color: var(--text-grey) !important;
+}
+
+/* SEC 2 */
+.sec2 {
+    position: relative;
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    box-sizing: border-box;
+    padding: 0 70px 70px 70px;
+    background: var(--grey);
+}
+
+.sec2:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 45%;
+    height: 100%;
+    background: url("../img/hiasan2.svg");
+}
+
+.sec2 ul {
+    border-left: 7px solid var(--grey3);
+}
+
+.sec2 ul li {
+    list-style: none;
+}
+
+.sec2 ul li:first-child {
+    padding-top: 3%;
+}
+
+.sec2 ul li .item {
+    position: relative;
+    padding: 30px 45% 30px 40px;
+    opacity: 0.6;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=60)";
+    color: var(--white);
+}
+
+.sec2 ul li .item:hover {
+    opacity: 1;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+}
+
+.sec2 ul li .item:before {
+    content: "";
+    position: absolute;
+    top: 35px;
+    left: -18px;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background: var(--yellow);
+}
+
+.sec2 ul li .item span {
+    padding: 10px 20px;
+    border-radius: 50%;
+    font-size: 2em;
+    background: var(--grey2);
+    color: var(--yellow);
+}
+
+.sec2 ul li .item h2 {
+    margin: 20px 0 0;
+    font-size: 2em;
+    text-transform: capitalize;
+    color: var(--yellow);
+}
+
+.sec2 ul li .item p {
+    margin: 20px 0 0;
+}
+
+/* DESKTOP */
+@media (min-width: 1024px) and (max-width: 1359px) {
+    .sec1 .content {
+        width: 35%;
+        margin-top: -40vh;
+    }
+}
+
+/* IPAD */
+/* 768 x 1024 */
+@media (width: 768px) and (height: 1024px) {
+    .sec1 .box-fixed .title {
+        width: 80%;
+        margin-top: 80px;
+    }
+
+    .sec1 .center .img-box {
+        width: 60%;
+    }
+
+    .sec1 .content {
+        display: none;
+    }
+
+    .sec2 ul li .item {
+        padding: 30px 40px;
+    }
+
+    .sec2:before {
+        background: none;
+    }
+}
+
+/* IPAD PRO */
+/* 1024 x 1366 */
+@media (width: 1024px) and (height: 1366px) {
+    .sec1 .box-fixed .title {
+        width: 80%;
+        margin-top: 80px;
+    }
+
+    .sec1 .center .img-box {
+        width: 60%;
+    }
+
+    .sec1 .content {
+        display: none;
+    }
+}
+
+/* MOBILE */
+/* 
+    769 ~ 900
+    >= 768
+    (width)
+*/
+@media (max-width: 900px) {
+    .sec1 .box-fixed .title {
+        width: 80%;
+        margin-top: 80px;
+    }
+
+    .sec1 .center .img-box {
+        width: 75%;
+        margin-top: 0;
+    }
+
+    .sec1 .content {
+        display: none;
+    }
+
+    .sec2 ul li .item {
+        padding: 30px 40px;
+    }
+
+    .sec2:before {
+        background: none;
+    }
+}

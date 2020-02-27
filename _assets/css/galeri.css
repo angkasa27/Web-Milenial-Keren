@@ -1,0 +1,212 @@
+:root {
+    --yellow: #e5ff00;
+    --grey: #181818;
+    --grey2: #4a4a4a;
+    --grey3: #bebebe;
+    --dark: #000;
+    --white: #fff;
+    --blue: #1affd8;
+    --purple: #ff1ae8;
+}
+
+/* CONTENT */
+.sec1 {
+    width: 100%;
+    min-height: 100vh;
+    overflow: hidden;
+    position: relative;
+    box-sizing: border-box;
+    padding: 1% 2% 100px;
+    display: -ms-grid;
+    display: grid;
+    grid-gap: 5px;
+    -ms-grid-columns: (min-max(100px, 1fr)) [auto-fit];
+    grid-template-columns: repeat(auto-fit, min-max(100px, 1fr));
+    grid-auto-rows: 200px;
+    grid-auto-flow: dense;
+}
+
+.sec1 div.grey {
+    cursor: pointer;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+}
+
+.sec1 div.grey:hover,
+.sec1 div#passion:hover {
+    opacity: 0.8;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=80)";
+}
+
+.sec1 div h1 {
+    height: 100%;
+    font-size: 6em;
+    text-transform: uppercase;
+    color: var(--white);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    box-sizing: border-box;
+    padding: 40px;
+}
+
+.sec1 div a {
+    height: 100%;
+    text-decoration: none;
+    display: block;
+    font-size: 3em;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: var(--white);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.sec1 .horizontal {
+    -ms-grid-column: span 2;
+    grid-column: span 2;
+}
+
+.sec1 .vertical {
+    -ms-grid-row: span 2;
+    grid-row: span 3;
+}
+
+.sec1 .big {
+    -ms-grid-column: span 2;
+    grid-column: span 2;
+    -ms-grid-row: span 2;
+    grid-row: span 2;
+}
+
+.sec1 .jumbo {
+    -ms-grid-column: span 3;
+    grid-column: span 3;
+    -ms-grid-row: span 3;
+    grid-row: span 3;
+}
+
+.blue {
+    background: var(--blue) !important;
+}
+
+.purple {
+    background: var(--purple) !important;
+}
+
+.white {
+    background: var(--grey3) !important;
+}
+
+.sec1 div.dark {
+    background: #000;
+    cursor: pointer;
+}
+
+.sec1 div#ade {
+    background: url("../img/ade.jpg") no-repeat center;
+    background-size: cover;
+}
+
+.sec1 div#jess {
+    background: url("../img/jess.jpg") no-repeat center;
+    background-size: cover;
+}
+
+.sec1 div#ria {
+    background: url("../img/ria.jpg") no-repeat center;
+    background-size: cover;
+}
+
+.sec1 div#bong {
+    background: url("../img/bong.jpg") no-repeat center;
+    background-size: cover;
+    background-position-y: -25px;
+}
+
+.sec1 div#nadiem {
+    background: url("../img/nadiem.jpg") no-repeat center;
+    background-size: cover;
+}
+
+.show {
+    width: 100%;
+    min-height: 100vh;
+    height: auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    visibility: hidden;
+}
+
+.show .container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    min-height: 100vh;
+    height: auto;
+    background: rgba(255, 255, 255, 0.7);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.show .box {
+    width: 40%;
+    height: auto;
+    box-sizing: border-box;
+    padding: 50px;
+    background: var(--white);
+}
+
+.show .box h1 {
+    text-transform: uppercase;
+    font-size: 6em;
+    margin-bottom: 40px;
+}
+
+.show .box p {
+    font-size: 1.2em;
+}
+
+/* GRID RESPONSIVE */
+@media (min-width: 900px) {
+    .sec1 {
+        -ms-grid-columns: (1fr) [7];
+        grid-template-columns: repeat(7, 1fr);
+        grid-auto-rows: 200px;
+    }
+}
+
+@media (min-width: 900px) and (max-width: 1200px) {
+    .sec1 div h1 {
+        font-size: 5.2em;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .show .box {
+        width: 90%;
+    }
+}
